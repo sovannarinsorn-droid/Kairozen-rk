@@ -1,0 +1,22 @@
+services:
+  - type: worker
+    name: kairozen-referral-bot
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: ADMIN_ID
+        sync: false
+      - key: CHANNEL_USERNAME
+        sync: false
+      - key: CHANNEL_URL
+        sync: false
+      - key: REFERRAL_REWARD
+        value: "0.05"
+      - key: MIN_WITHDRAW
+        value: "0.50"
+      - key: WITHDRAW_COOLDOWN_SECONDS
+        value: "3600"
