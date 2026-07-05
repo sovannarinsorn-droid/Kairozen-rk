@@ -36,7 +36,7 @@ from datetime import datetime
 BOT_TOKEN = os.environ["BOT_TOKEN"]                     # ត្រូវកំណត់ក្នុង Render Environment Variables
 ADMIN_ID = int(os.environ["ADMIN_ID"])                  # admin telegram user id
 REFERRAL_REWARD = float(os.environ.get("REFERRAL_REWARD", "0.05"))   # ទឹកប្រាក់ទទួលបានក្នុង 1 ការណែនាំជោគជ័យ
-MIN_WITHDRAW = float(os.environ.get("MIN_WITHDRAW", "0.50"))         # ទឹកប្រាក់អប្បបរមាសម្រាប់ដក
+MIN_WITHDRAW = float(os.environ.get("MIN_WITHDRAW", "0.25"))         # ទឹកប្រាក់អប្បបរមាសម្រាប់ដក
 WITHDRAW_COOLDOWN_SECONDS = int(os.environ.get("WITHDRAW_COOLDOWN_SECONDS", "3600"))   # [V4] cooldown 1 ម៉ោង
 DB_FILE = os.environ.get("DB_FILE", "db.json")
 LOCK = threading.Lock()
