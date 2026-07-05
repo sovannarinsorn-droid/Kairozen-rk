@@ -17,6 +17,6 @@ services:
       - key: REFERRAL_REWARD
         value: "0.05"
       - key: MIN_WITHDRAW
-        value: "0.50"
+        value: "0.25"
       - key: WITHDRAW_COOLDOWN_SECONDS
         value: "3600"
